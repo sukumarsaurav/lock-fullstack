@@ -7,6 +7,7 @@ import * as mqtt from 'mqtt';
 import config from './config/app';
 import db from './config/db';
 import { errorHandler, notFound } from './middleware/error';
+import { handleFavicon } from './middleware/favicon';
 
 // Import routes
 import authRoutes from './routes/authRoutes';
@@ -34,6 +35,7 @@ const mqttClient = mqtt.connect(config.mqtt.brokerUrl, {
 });
 
 // Middleware
+app.use(handleFavicon);
 app.use(helmet());
 app.use(cors({
   origin: config.app.corsOrigins,

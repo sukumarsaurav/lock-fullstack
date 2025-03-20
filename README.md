@@ -149,3 +149,12 @@ npm start
 ## License
 
 [MIT License](LICENSE) 
+
+note here {
+  "phone": "+1234567890",
+  "otp": "123456"
+}
+works not {
+  "phone": "+1234567890",
+  "code": "123456"
+}
