@@ -1,0 +1,18 @@
+we want to create backend api with expressjs with PostgreSQL & PostGIS (Best for Scalable, Enterprise-grade Backend)
+we wan to use tech stack Tech Stack for Backend
+Component	Technology
+Backend Framework	Express.js
+Database	PostgreSQL + PostGIS
+Real-time Communication	WebSockets / MQTT
+Authentication	JWT + OAuth2
+IoT Communication	MQTT / WebSockets
+Payments	Stripe / Razorpay
+Job Scheduling	Node.js Cron Jobs / BullMQ
+Use MQTT for IoT communication (lockers ↔️ backend) and WebSockets for mobile app real-time updates (backend ↔️ app). The backend will act as a bridge between both protocols.
+w wan to use twilio for otp verification 
+here in app user verify their phone number with otp 
+after verification user can login with phone number and password 
+in dashboard we have 4 bottom tabs home explore lockers and profile in home we have active lockers visible otion to find lockers and nearby lockers then in explore tab search optiom then popula r 
+location in card in card location name then distance from user then avilable size like small medium large and view button to get get detiled view of that locker like each size locker with their number avilable then in lockers tab we have active lockers card with name size and price then progress bar then button to extemd time and releasewith status active or expiring soon if time is less tan 15 minthen in profile bottom tab options related to profile
+we need backend to handle all these and other based on database 
+
