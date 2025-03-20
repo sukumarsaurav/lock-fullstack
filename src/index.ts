@@ -49,6 +49,22 @@ app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/lockers', lockerRoutes);
 
+// Root route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    name: 'SafeHouse Locker API',
+    version: '1.0.0',
+    description: 'API for the SafeHouse Locker Rental Mobile Application',
+    endpoints: {
+      auth: '/api/auth',
+      user: '/api/user',
+      lockers: '/api/lockers'
+    },
+    docs: '/api-docs', // If you add API documentation in the future
+    health: '/health'
+  });
+});
+
 // Health check route
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
